@@ -1,0 +1,19 @@
+    Reflection
+    Jake Meyer
+
+This program is designed to check if two words are anagrams using two steps.  The first step is to 
+take in a dictionary text file, which contains a list of words, and sort those words in canonical
+order. The way I executed the sorting was to look at it one word at a time. I converted each word
+to an array of characters and sorted the characters in each word alphabetically. Before swapping 
+the letters, I stored the original words in an array of Strings. After swapping, I sorted all of
+the canonically sorted Strings alphabetically. Then, I listed the original words in that order.
+I stored this new list of words into a new String, each word separated by a line, and wrote that
+String to a new "sorted-output.txt" file.
+
+The second step is to take in two words from the dictionary file and test them as anagrams. I 
+converted each word to an array of characters and sorted them canonically again. Then, I checked 
+to see if the canonically sorted words were equal to each other. If they were, the words were
+anagrams. If they were unequal, they were not anagrams.
+
+The flow of this program is clean and straight-forward. It uses as little memory and time 
+complexity as possible.
